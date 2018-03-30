@@ -14,9 +14,9 @@
         android:id="@+id/buttonInteriaCategory"
         android:layout_width="150sp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="116dp"
-        android:layout_marginTop="220dp"
-        android:onClick="kliknietoInteria"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="224dp"
+        android:onClick="wybranoInteria"
         android:text="@string/buttonInteriaCategory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +26,7 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:onClick="kliknietoRMF"
+        android:onClick="wybranoRMF"
         android:text="@string/buttonRMFCategory"
         app:layout_constraintEnd_toEndOf="@+id/buttonInteriaCategory"
         app:layout_constraintStart_toStartOf="@+id/buttonInteriaCategory"
@@ -62,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/buttonPolsatCategory"
+        android:onClick="wybranoPolsatNews"
         app:layout_constraintEnd_toEndOf="@+id/buttonInteriaCategory"
         app:layout_constraintStart_toStartOf="@+id/buttonInteriaCategory"
         app:layout_constraintTop_toBottomOf="@+id/buttonRMFCategory" />
@@ -72,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/buttonTVN24Category"
+        android:onClick="wybranoTVN24"
         app:layout_constraintEnd_toEndOf="@+id/buttonInteriaCategory"
         app:layout_constraintStart_toStartOf="@+id/buttonInteriaCategory"
         app:layout_constraintTop_toBottomOf="@+id/buttonPolsatCategory" />
