@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">RssFeedAndroidClient</string>
+    <string name="refresh">Refresh</string>
+    <string name="howToGet">How do you want to get your news ?</string>
+    <string name="contentDescriptionRssIcon">Rss Icon</string>
+    <string name="splashScreen">Rss \nFeed \nReader</string>
+    <string name="buttonInteriaCategory">Interia</string>
+    <string name="buttonRMFCategory">RMF24</string>
+    <string name="textZJakiejStrony">Wybierz portal z ktorego chcesz pobrac wiadomosci</string>
+    <string name="buttonPolsatCategory">Polsat News</string>
+    <string name="buttonTVN24Category">TVN24</string>
+    <string name="buttonFakty">Fakty</string>
+    <string name="buttonSwiat">Swiat</string>
+    <string name="textJakaKategoria">Wybierz interesujaca cie kategorie wiadomosci</string>
+    <string name="buttonNauka">Nauka</string>
+    <string name="buttonEuroSport">Eurosport</string>
+    <string name="buttonEkstraklasa">Ekstraklasa</string>
+    <string name="buttonNoweTechnologie">Nowe Technologie</string>
+    <string name="buttonPolska">Polska</string>
+    <string name="contentDescriptionInteriaLogo">Logo Interii</string>
+    <string name="buttonSport">Sport</string>
+    <string name="buttonKultura">Kultura</string>
+    <string name="buttonEkonomia">Ekonomia</string>
+    <string name="contentDescriptionRMF24Logo">Logo RMF24</string>
+    <string name="buttonwszystkie">Wszystkie</string>
+    <string name="buttonTechnologieIMedycyna">Technologie i Medycyna</string>
+    <string name="buttonRozrywka">Rozrywka</string>
+    <string name="buttonBiznes">Biznes</string>
+    <string name="buttonKraj">Kraj</string>
+    <string name="contentDescriptionPolsatNewsLogo">Logo Polsat News</string>
+    <string name="buttonNajnowsze">Najnowsze</string>
+    <string name="buttonNajwazniejsze">Najwazniejsze</string>
+    <string name="buttonTechnologia">Technologia</string>
+</resources>

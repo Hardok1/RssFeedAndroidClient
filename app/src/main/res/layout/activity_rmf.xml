@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".RMFActivity">
+
+    <Button
+        android:id="@+id/buttonRMFFakty"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="162dp"
+        android:onClick="kliknietoFakty"
+        android:text="@string/buttonFakty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRMFSwiat"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSwiat"
+        android:text="@string/buttonSwiat"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFFakty" />
+
+    <TextView
+        android:id="@+id/textWhichCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/textJakaKategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRMFNauka"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoNauka"
+        android:text="@string/buttonNauka"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFPolska" />
+
+    <Button
+        android:id="@+id/buttonRMFSport"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSport"
+        android:text="@string/buttonSport"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFNauka" />
+
+    <Button
+        android:id="@+id/buttonRMFKultura"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoKultura"
+        android:text="@string/buttonKultura"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFSport" />
+
+    <Button
+        android:id="@+id/buttonRMFEkonomia"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoEkonomia"
+        android:text="@string/buttonEkonomia"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFKultura" />
+
+    <Button
+        android:id="@+id/buttonRMFPolska"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoPolska"
+        android:text="@string/buttonPolska"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRMFFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonRMFFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRMFSwiat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDescriptionRMF24Logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rmf_logo" />
+
+</android.support.constraint.ConstraintLayout>

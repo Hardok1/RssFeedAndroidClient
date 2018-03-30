@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    tools:context=".TVN24Activity">
+
+    <Button
+        android:id="@+id/buttonTVN24Najnowsze"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="164dp"
+        android:onClick="kliknietoNajnowsze"
+        android:text="@string/buttonNajnowsze"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTVN24Najwazniejsze"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoNajwazniejsze"
+        android:text="@string/buttonNajwazniejsze"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Najnowsze" />
+
+    <TextView
+        android:id="@+id/textWhichCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/textJakaKategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTVN24Swiat"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSwiat"
+        android:text="@string/buttonSwiat"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Polska" />
+
+    <Button
+        android:id="@+id/buttonTVN24Sport"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSport"
+        android:text="@string/buttonSport"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Biznes" />
+
+    <Button
+        android:id="@+id/buttonTVN24Technologia"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoTech"
+        android:text="@string/buttonTechnologia"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Sport" />
+
+    <Button
+        android:id="@+id/buttonTVN24Biznes"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoBiznes"
+        android:text="@string/buttonBiznes"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Swiat" />
+
+    <Button
+        android:id="@+id/buttonTVN24Polska"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoPolska"
+        android:text="@string/buttonPolska"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintStart_toStartOf="@+id/buttonTVN24Najnowsze"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTVN24Najwazniejsze" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDescriptionPolsatNewsLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_tvn24" />
+
+</android.support.constraint.ConstraintLayout>

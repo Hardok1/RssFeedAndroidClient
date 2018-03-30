@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    tools:context=".PolsatActivity">
+
+    <Button
+        android:id="@+id/buttonPolsatWszystkie"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="164dp"
+        android:onClick="kliknietoWszystkie"
+        android:text="@string/buttonwszystkie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPolsatSwiat"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSwiat"
+        android:text="@string/buttonSwiat"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatWszystkie" />
+
+    <TextView
+        android:id="@+id/textWhichCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/textJakaKategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPolsatTechnologieIMedycyna"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoTechnologieIMedycyna"
+        android:text="@string/buttonTechnologieIMedycyna"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatKraj" />
+
+    <Button
+        android:id="@+id/buttonPolsatSport"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSport"
+        android:text="@string/buttonSport"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatBiznes" />
+
+    <Button
+        android:id="@+id/buttonPolsatRozrywka"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoRozrywka"
+        android:text="@string/buttonRozrywka"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatSport" />
+
+    <Button
+        android:id="@+id/buttonPolsatBiznes"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoBiznes"
+        android:text="@string/buttonBiznes"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatTechnologieIMedycyna" />
+
+    <Button
+        android:id="@+id/buttonPolsatKraj"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoKraj"
+        android:text="@string/buttonKraj"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintStart_toStartOf="@+id/buttonPolsatWszystkie"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolsatSwiat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDescriptionPolsatNewsLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/polsat_news_logo" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".InteriaActivity">
+
+    <Button
+        android:id="@+id/buttonInteriaFakty"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="162dp"
+        android:onClick="kliknietoFakty"
+        android:text="@string/buttonFakty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonInteriaSwiat"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoSwiat"
+        android:text="@string/buttonSwiat"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaFakty" />
+
+    <TextView
+        android:id="@+id/textWhichCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/textJakaKategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonInteriaNauka"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoNauka"
+        android:text="@string/buttonNauka"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaPolska" />
+
+    <Button
+        android:id="@+id/buttonInteriaEuroSport"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoEurosport"
+        android:text="@string/buttonEuroSport"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaNoweTechnologie" />
+
+    <Button
+        android:id="@+id/buttonInteriaEkstraklasa"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoEkstraklasa"
+        android:text="@string/buttonEkstraklasa"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaEuroSport" />
+
+    <Button
+        android:id="@+id/buttonInteriaNoweTechnologie"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoNoweTechnologie"
+        android:text="@string/buttonNoweTechnologie"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaNauka" />
+
+    <Button
+        android:id="@+id/buttonInteriaPolska"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="kliknietoPolska"
+        android:text="@string/buttonPolska"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInteriaFakty"
+        app:layout_constraintStart_toStartOf="@+id/buttonInteriaFakty"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInteriaSwiat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/contentDescriptionInteriaLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/interia_logo" />
+
+</android.support.constraint.ConstraintLayout>
