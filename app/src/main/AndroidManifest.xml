@@ -23,7 +23,7 @@
         <activity android:name=".InteriaActivity" />
         <activity android:name=".RMFActivity" />
         <activity android:name=".PolsatActivity" />
-        <activity android:name=".TVN24Activity"></activity>
+        <activity android:name=".TVN24Activity"/>
     </application>
 
 </manifest>

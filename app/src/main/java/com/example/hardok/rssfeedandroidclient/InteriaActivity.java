@@ -33,7 +33,7 @@ public class InteriaActivity extends AppCompatActivity {
 
     public void kliknietoNauka(View view){
         Intent interia = new Intent(this,RssViewActivity.class);
-        interia.putExtra("url","ihttps://rssfeedserver.herokuapp.com/rss/bySite/interia_nauka");
+        interia.putExtra("url","https://rssfeedserver.herokuapp.com/rss/bySite/interia_nauka");
         startActivity(interia);
     }
 

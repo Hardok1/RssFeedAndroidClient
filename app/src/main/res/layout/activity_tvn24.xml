@@ -111,6 +111,6 @@
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_tvn24" />
+        app:srcCompat="@drawable/tvn24_logo" />
 
 </android.support.constraint.ConstraintLayout>

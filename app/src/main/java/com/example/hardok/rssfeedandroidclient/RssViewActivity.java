@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
@@ -23,39 +23,27 @@ public class RssViewActivity extends AppCompatActivity {
 
 
 
-    // URL to get contacts JSON
 
-    ArrayList<HashMap<String, String>> contactList;
 
+    ProgressBar progressBar;
     String url;
     EditText text;
     private String TAG = RssViewActivity.class.getSimpleName();
     ListView lv;
     ArrayList<HashMap<String, String>> feedList;
-    private ArrayAdapter<String> adapter;
-    //private ArrayList<String> arrayList;
-    //int clickCounter=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rss_view);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         lv = (ListView) findViewById(R.id.listView);
         feedList = new ArrayList<>();
         new GetFeed().execute();
         Bundle bundle = getIntent().getExtras();
-        url = (String) bundle.get("url");
-        //lv.setAdapter(adapter);
-    }
-
-    public void addItem(View view){
-        Toast.makeText(this, "This functionality isn't finished yet", Toast.LENGTH_SHORT).show();
-        /*String tekst = text.getText().toString();
-        if (!tekst.isEmpty()) {
-            arrayList.add(text.getText().toString());
-            Toast.makeText(this, "Wpisano: " + text.getText().toString(), Toast.LENGTH_SHORT).show();
-            adapter.notifyDataSetChanged();
-        }*/
+        if (bundle != null) {
+            url = (String) bundle.get("url");
+        }
     }
 
     private class GetFeed extends AsyncTask<Void, Void, Void>{
@@ -63,7 +51,8 @@ public class RssViewActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(RssViewActivity.this, "JSON DATA IS DOWNLOADING", Toast.LENGTH_SHORT).show();
+            Toast.makeText(RssViewActivity.this, "Pobieranie wiadomosci z serwera", Toast.LENGTH_SHORT).show();
+            progressBar.setVisibility(View.VISIBLE);
         }
 
         @Override
@@ -120,7 +109,7 @@ public class RssViewActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(getApplicationContext(),
-                                "Couldn't get json from server. Check LogCat for possible errors!",
+                                "Nie udalo sie pobrac danych z serwera.",
                                 Toast.LENGTH_LONG).show();
                     }
                 });
@@ -132,6 +121,7 @@ public class RssViewActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result){
             super.onPostExecute(result);
+            progressBar.setVisibility(View.GONE);
             ListAdapter adapter = new SimpleAdapter(RssViewActivity.this, feedList, R.layout.list_rss,new String[]{"title","publicationDate","category","description","link"},new int[]{R.id.title,R.id.publicationDate,R.id.category,R.id.description,R.id.link});
             lv.setAdapter(adapter);
         }
